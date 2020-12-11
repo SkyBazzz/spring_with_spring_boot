@@ -1,13 +1,11 @@
 package com.epam.oleksandr.learningspring.business.service;
 
 import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.epam.oleksandr.learningspring.business.domain.RoomReservation;
 import com.epam.oleksandr.learningspring.business.domain.Traveler;
 import com.epam.oleksandr.learningspring.data.entity.Guest;
 import com.epam.oleksandr.learningspring.data.repository.GuestRepository;
