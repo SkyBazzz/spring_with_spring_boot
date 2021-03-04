@@ -1,4 +1,4 @@
-package com.epam.oleksandr.learningspring.web;
+package com.epam.oleksandr.learningspring.controller;
 
 import static org.hamcrest.core.StringContains.containsString;
 import static org.mockito.BDDMockito.given;

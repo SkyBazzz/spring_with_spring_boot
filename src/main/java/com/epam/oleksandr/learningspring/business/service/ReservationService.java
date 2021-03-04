@@ -37,10 +37,11 @@ public class ReservationService {
         Iterable<Room> rooms = roomRepository.findAll();
         Map<Long, RoomReservation> roomReservationMap = new HashMap<>();
         rooms.forEach(room -> {
-            RoomReservation roomReservation = new RoomReservation();
-            roomReservation.setRoomId(room.getRoomId());
-            roomReservation.setRoomName(room.getRoomName());
-            roomReservation.setRoomNumber(room.getRoomNumber());
+            RoomReservation roomReservation = new RoomReservation(){{
+                setRoomId(room.getRoomId());
+                setRoomName(room.getRoomName());
+                setRoomNumber(room.getRoomNumber());
+            }};
             roomReservationMap.put(room.getRoomId(), roomReservation);
         });
         Iterable<Reservation> reservations = this.reservationRepository.findReservationByResDate(new java.sql.Date(date.getTime()));

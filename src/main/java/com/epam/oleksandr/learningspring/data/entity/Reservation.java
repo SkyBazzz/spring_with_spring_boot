@@ -1,6 +1,5 @@
 package com.epam.oleksandr.learningspring.data.entity;
 
-import java.math.BigInteger;
 import java.sql.Date;
 
 import javax.persistence.Column;
